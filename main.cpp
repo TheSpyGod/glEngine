@@ -86,8 +86,7 @@ int main()
 	unsigned int VBO, VAO;
 	glGenVertexArrays(1, &VAO); // we can also generate multiple VAOs or buffers at the same time
 	glGenBuffers(1, &VBO);
-	// first triangle setup
-	// --------------------
+
 	glBindVertexArray(VAO);
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(verticies), verticies, GL_STATIC_DRAW);
